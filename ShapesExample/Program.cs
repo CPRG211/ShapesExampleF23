@@ -30,6 +30,11 @@
 
             Console.WriteLine("rect2 perimeter = " + rect2.CalcPerimeter());
             Console.WriteLine("rect2 area = " + rect2.CalcArea());
+
+            Square square1 = new Square(15, "Blue");
+
+            double squareArea1 = square1.CalcArea();
+            Console.WriteLine("square1 area = " + squareArea1);
         }
     }
 }
