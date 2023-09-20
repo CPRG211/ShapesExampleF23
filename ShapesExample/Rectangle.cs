@@ -52,10 +52,28 @@ namespace ShapesExample
         public Rectangle(double width, double height, string color)
         {
             Width = width;
+
+            //if (width <= 0)
+            //    throw new Exception("Width cannot be zero or negative.");
+
+            //this.width = width;
             Height = height;
             Color = color;
         }
 
         // Methods
+        public double CalcPerimeter()
+        {
+            double perimeter;
+
+            perimeter = (width * 2) + (height * 2);
+
+            return perimeter;
+        }
+
+        public double CalcArea()
+        {
+            return width * height;
+        }
     }
 }
